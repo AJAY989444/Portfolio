@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+
+
+.cart {
+  flex: 1;
+  margin-left: 20px;
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px;
+  width: 100%;
+  border: none;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.cart-item img {
+  width: 50px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 3;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 220px;
+  height: 380px;           /* Enough height for full image + details */
+  background: white;
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;       /* Prevent very tall images */
+  object-fit: contain;     /* Show full image without cropping */
+  border-radius: 6px;
+}
+
